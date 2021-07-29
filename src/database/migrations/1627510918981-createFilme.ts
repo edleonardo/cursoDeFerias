@@ -46,6 +46,6 @@ export class createFilme1627510918981 implements MigrationInterface {
   }
 
   public async down(queryRunner: QueryRunner): Promise<void> {
+		await queryRunner.dropTable('Filmes')
   }
-
 }
